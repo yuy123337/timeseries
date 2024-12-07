@@ -1,0 +1,24 @@
+ERROR: Unable to locate a modulefile for 'python/3.9.1'
+/var/spool/slurm/d/job26674506/slurm_script: line 13: /home/ymusic7/miniconda3/bin/activate: No such file or directory
+Traceback (most recent call last):
+  File "/home/ymusic7/metro_restaurants/prophet_forecast.py", line 1, in <module>
+    import pandas as pd
+  File "/home/ymusic7/.local/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/ymusic7/.local/lib/python3.8/site-packages/pandas/compat/__init__.py", line 25, in <module>
+    from pandas.compat.numpy import (
+  File "/home/ymusic7/.local/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 4, in <module>
+    from pandas.util.version import Version
+  File "/home/ymusic7/.local/lib/python3.8/site-packages/pandas/util/__init__.py", line 8, in <module>
+    from pandas.core.util.hashing import (  # noqa:F401
+  File "/home/ymusic7/.local/lib/python3.8/site-packages/pandas/core/util/hashing.py", line 24, in <module>
+    from pandas.core.dtypes.common import (
+  File "/home/ymusic7/.local/lib/python3.8/site-packages/pandas/core/dtypes/common.py", line 26, in <module>
+    from pandas.core.dtypes.base import _registry as registry
+  File "/home/ymusic7/.local/lib/python3.8/site-packages/pandas/core/dtypes/base.py", line 24, in <module>
+    from pandas.errors import AbstractMethodError
+  File "/home/ymusic7/.local/lib/python3.8/site-packages/pandas/errors/__init__.py", line 6, in <module>
+    import ctypes
+  File "/software/python-3.8.0-el8-x86_64/lib/python3.8/ctypes/__init__.py", line 7, in <module>
+    from _ctypes import Union, Structure, Array
+ModuleNotFoundError: No module named '_ctypes'
